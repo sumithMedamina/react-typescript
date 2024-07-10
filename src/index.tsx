@@ -3,14 +3,18 @@ import ReactDOM from 'react-dom/client';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { HomeComponent } from './components/home/home-component';
+import store from './store/store';
+import { Provider } from 'react-redux';
+import { ProductsCatalog } from './redux-demo/fakestore-products';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <HomeComponent />
+    <Provider store={store}>
+    <ProductsCatalog />
+    </Provider>
   </React.StrictMode>
 );
 
