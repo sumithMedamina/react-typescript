@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import cartSlicers from "../slicers/cart-slicers";
+import likeSlice   from "../slicers/likes-slicer";
 
 export default configureStore({
     reducer:{
-        store:cartSlicers
+        store:likeSlice,
     }
 })

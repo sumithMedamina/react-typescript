@@ -40,7 +40,7 @@ export function ProductsCatalog(){
                             </div>
                             <div className="card-footer">
                                     <p>{item.rating.rate}</p>
-                                    <button onClick={() =>handleAddToCart(products)}>add to cart</button>
+                                    <button onClick={() =>handleAddToCart(item)}>add to cart</button>
                             </div>
                         </div>
                     )

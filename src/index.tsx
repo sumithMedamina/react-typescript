@@ -5,7 +5,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import store from './store/store';
 import { Provider } from 'react-redux';
-import { ProductsCatalog } from './redux-demo/fakestore-products';
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
+import { VideosComponent } from './components/home/videos-component';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <ProductsCatalog />
+    <VideosComponent />
     </Provider>
   </React.StrictMode>
 );
